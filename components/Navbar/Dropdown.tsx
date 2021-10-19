@@ -7,24 +7,32 @@ function Dropdown() {
     <div className="flex justify-center">
       <div className="w-40 mb-5 inline-flex flex-col italic font-medium text-sm">
         <Link href="/#tutorials" passHref>
-          <div className="py-3 flex items-start justify-between">
+          <div className="py-3 flex items-start justify-between focus:px-5 hover:text-[#9672FB]">
             <p className="text-gray-800">Tutorials</p>
             <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
           </div>
         </Link>
-        <div className="py-3 flex items-start justify-between">
-          <p className="text-gray-800">Download</p>
-          <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
-        </div>
-        <div className="py-3 flex items-start justify-between">
-          <p className="text-gray-800">Features</p>
-          <div className=""></div>
-          <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
-        </div>
-        <div className="py-3 flex items-start justify-between">
-          <p className="text-gray-800">FAQs</p>
-          <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
-        </div>
+        <Link href="/#download" passHref>
+          <div className="py-3 flex items-start justify-between">
+            <p className="text-gray-800">Download</p>
+            <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
+          </div>
+        </Link>
+
+        <Link href="/#features" passHref>
+          <div className="py-3 flex items-start justify-between">
+            <p className="text-gray-800">Features</p>
+            <div className=""></div>
+            <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
+          </div>
+        </Link>
+
+        <Link href="/#faqs" passHref>
+          <div className="py-3 flex items-start justify-between">
+            <p className="text-gray-800">FAQs</p>
+            <Image src="/icons/arrow.svg" width={50} height={12} alt="arrow" />
+          </div>
+        </Link>
       </div>
     </div>
   );

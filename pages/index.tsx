@@ -14,9 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Hero />
-      <div className="mx-5 sm:mx-40 my-10 flex flex-col items-center text-center">
+      <div className="mx-5 sm:mx-80 my-10 flex flex-col items-center text-center">
         <h1 className="text-xl sm:text-4xl font-semibold">We're Casecraft</h1>
-        <p className=" text-lg sm:text-xl text-left sm:text-center font-light">
+        <p className=" text-sm sm:text-lg text-center font-light">
           We bring your imaginations to life by giving you the power & ability
           to create amazing, outstanding, breathtaking & spectacular cases for
           your gadgets
@@ -24,12 +24,15 @@ const Home: NextPage = () => {
         <Button>How it works</Button>
       </div>
       <div
-        className="h-80 sm:min-h-screen bg-center bg-contain sm:bg-cover bg-no-repeat"
+        className="h-80 sm:min-h-screen bg-center bg-contain sm:bg-cover bg-no-repeat bg-fixed"
         style={{
           backgroundImage: "url('/images/phones.svg')",
         }}
       />
-      <div className="mx-5 sm:mx-40 my-10 flex flex-col items-start text-left">
+      <div
+        id="features"
+        className="mx-5 sm:mx-40 my-10 flex flex-col items-start text-left"
+      >
         <h3 className="text-lg sm:text-xl text-[#7A7490] font-medium italic">
           A tool that makes you
         </h3>
@@ -108,7 +111,10 @@ const Home: NextPage = () => {
         </div>
         <p className="text-lg sm:text-xl text-white">How CaseCraft works</p>
       </div>
-      <div className="h-60 py-5 flex justify-center items-start text-center">
+      <div
+        id="download"
+        className="h-60 py-5 flex justify-center items-start text-center"
+      >
         <div className="h-full inline-flex flex-col justify-between">
           <h1 className="text-2xl sm:text-4xl font-medium  mb-2">
             Get started now
@@ -148,7 +154,7 @@ const Home: NextPage = () => {
                   <p className="text-xs font-extralight">
                     Download on the <br />{" "}
                     <span className="-mt-10 text-lg font-medium">
-                      App Store
+                      Play Store
                     </span>{" "}
                   </p>
                 </div>
@@ -158,12 +164,12 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div
-        className="h-80 sm:min-h-screen bg-center bg-contain sm:bg-cover bg-no-repeat"
+        className="h-80 sm:min-h-screen bg-center bg-contain sm:bg-cover bg-no-repeat bg-fixed"
         style={{
           backgroundImage: "url('/images/app_screens.svg')",
         }}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

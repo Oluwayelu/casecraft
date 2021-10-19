@@ -20,22 +20,24 @@ export default function Navbar() {
         </div>
         <div className="flex items-center">
           <Link href="/#tutorials">
-            <a className="text-gray-800 mx-3 hidden md:inline-block">
+            <a className="text-gray-800 mx-3 hidden md:inline-block hover:text-[#9672FB] focus:text-[#9672FB]">
               Tutorials
             </a>
           </Link>
-          <Link href="/download">
-            <a className="text-gray-800 mx-3 hidden md:inline-block">
+          <Link href="/#download">
+            <a className="text-gray-800 mx-3 hidden md:inline-block hover:text-[#9672FB] focus:text-[#9672FB]">
               Download
             </a>
           </Link>
-          <Link href="/help">
-            <a className="text-gray-800 mx-3 hidden md:inline-block">
+          <Link href="/#features">
+            <a className="text-gray-800 mx-3 hidden md:inline-block hover:text-[#9672FB] focus:text-[#9672FB]">
               Features
             </a>
           </Link>
-          <Link href="/help">
-            <a className="text-gray-800 mx-3 hidden md:inline-block">FAQS</a>
+          <Link href="/#faqs">
+            <a className="text-gray-800 mx-3 hidden md:inline-block hover:text-[#9672FB] focus:text-[#9672FB]">
+              FAQS
+            </a>
           </Link>
 
           {open ? (
